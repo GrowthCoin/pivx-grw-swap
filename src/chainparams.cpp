@@ -177,13 +177,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1454124731;
-        genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2402015;
+        genesis.nTime = 1375341361;
+        genesis.nBits = bnProofOfWorkLimit.GetCompact();
+        genesis.nNonce = 18181818;
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0xd5e4fc54c53a9a20bbe01e70d8b47ce66f15c1bd3504f7e80390bf5601150ded"));
-        assert(genesis.hashMerkleRoot == uint256("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(genesis.hashMerkleRoot == uint256("0x14531096cb0c017670183db62646eb5c7c83535f5494ea324152ecbf9b79f2bf"));
 
         vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "pivx.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
         vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "pivx.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
