@@ -178,7 +178,7 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1375341361;
-        genesis.nBits = bnProofOfWorkLimit.GetCompact();
+        genesis.nBits = 1e0fffff;
         genesis.nNonce = 18181818;
 
         hashGenesisBlock = genesis.GetHash();
@@ -351,9 +351,9 @@ public:
         nTargetTimespan = 24 * 60 * 60; // PIVX: 1 day
         nTargetSpacing = 1 * 60;        // PIVX: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1454124731;
-        genesis.nBits = 0x207fffff;
-        genesis.nNonce = 12345;
+        genesis.nTime = 1375341361;
+        genesis.nBits = 1e0fffff;
+        genesis.nNonce = 18181818;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
