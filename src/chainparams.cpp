@@ -282,8 +282,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("growthco.in", "seed.growthco.in"));     // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("blockx.info", "seed.grw.blockx.info"));    // Secondary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("growthco.in", "test.seed.growthco.in"));     // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("blockx.info", "test.seed.grw.blockx.info"));    // Secondary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 111); // Testnet pivx addresses start with 'm' or 'n'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 196);  // Testnet pivx script addresses start with '8' or '9'
