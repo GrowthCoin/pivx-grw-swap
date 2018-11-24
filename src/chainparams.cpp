@@ -174,7 +174,7 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1375341361;
-        genesis.nBits = 1e0fffff;
+        genesis.nBits = 0x1e0fffff;
         genesis.nNonce = 18181818;
 
         hashGenesisBlock = genesis.GetHash();
@@ -343,7 +343,7 @@ public:
         nTargetSpacing = 1 * 60;        // PIVX: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1375341361;
-        genesis.nBits = 1e0fffff;
+        genesis.nBits = 0x1e0fffff;
         genesis.nNonce = 18181818;
 
         hashGenesisBlock = genesis.GetHash();
