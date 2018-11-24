@@ -180,7 +180,7 @@ const CBlockIndex* getexplorerBlockIndex(int64_t height)
 
 std::string getexplorerBlockHash(int64_t Height)
 {
-    std::string genesisblockhash = "0x75a84e70f1403715a7d240c7dac106da5bbb1d1753a5b97e0007cec435186fa0";
+    std::string genesisblockhash = "d5e4fc54c53a9a20bbe01e70d8b47ce66f15c1bd3504f7e80390bf5601150ded";
     CBlockIndex* pindexBest = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
     if ((Height < 0) || (Height > pindexBest->nHeight)) {
         return genesisblockhash;
@@ -438,7 +438,7 @@ BlockExplorer::BlockExplorer(QWidget* parent) : QMainWindow(parent),
     ui->setupUi(this);
 
     this->setStyleSheet(GUIUtil::loadStyleSheet());
-    
+
     connect(ui->pushSearch, SIGNAL(released()), this, SLOT(onSearch()));
     connect(ui->content, SIGNAL(linkActivated(const QString&)), this, SLOT(goTo(const QString&)));
     connect(ui->back, SIGNAL(released()), this, SLOT(back()));
